@@ -452,11 +452,11 @@ button {
 }
 
 .img-list {
-  width: 62px; /* Задайте нужный размер SVG */
+  /* width: 62px; 
   height: 62px;
-  padding: 15px; /* Добавляем внутренний отступ для обводки */
+  padding: 15px; */
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%; /* Делает элемент кругом */
+  border-radius: 50%;
   margin-bottom: 22px;
 }
 
