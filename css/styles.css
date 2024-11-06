@@ -110,7 +110,6 @@ button {
 }
 
 .header-menu-list {
-  /* display: flex; */
   gap: 24px;
   display: none;
 }
@@ -161,7 +160,6 @@ button {
 }
 
 .header-soc-list {
-  /* display: flex; */
   margin-left: auto;
   gap: 24px;
   display: none;
@@ -175,37 +173,24 @@ button {
 .header-soc-link {
   width: 100%;
   height: 100%;
-  background-color: #fd9222;
   border-radius: 50%;
+  stroke: black;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.header-soc-link:hover {
-  background-color: teal;
+.header-soc-link:hover .header-soc-icon {
+  stroke: #fd9222;
 }
-
-/* .header-soc-link:hover .header-soc-icon {
-  stroke: violet;
-} */
 
 .header-soc-icon {
+  transition: stroke 0.3s ease;
   fill: transparent;
-  stroke: #ffffff;
+  stroke: black;
+  flex-shrink: 0;
+  display: none;
 }
-
-/* .header-soc-icon {
-  fill: #111;
-} */
-
-/* .header-menu-link:is(:hover, :focus) {
-  color: #fd9222;  
-} */
-
-/* .header-menu-link:focus {
-  color: #fd9222;
-} */
 
 .menu-open-btn {
   display: block;
@@ -803,11 +788,6 @@ button {
   stroke: #4c4c4c;
 }
 
-.header-soc-icon {
-  flex-shrink: 0;
-  display: none;
-}
-
 .backdrop {
   width: 100%;
   height: 100%;
@@ -1000,6 +980,11 @@ button {
     line-height: 1.17;
   }
 
+  .header {
+    padding-bottom: 34px;
+    padding-top: 28px;
+  }
+
   .hero {
     max-width: 768px;
     padding-top: 671px;
@@ -1116,6 +1101,21 @@ button {
   }
   .hero-buttons {
     margin-bottom: 32px;
+  }
+  .burger-icon {
+    display: none;
+  }
+  .header-soc-icon {
+    display: flex;
+  }
+  .header-menu-list {
+    display: flex;
+    gap: 24px;
+  }
+  .header-soc-list {
+    display: flex;
+    margin-left: auto;
+    gap: 18px;
   }
 }
 
