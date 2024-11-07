@@ -184,6 +184,16 @@ button {
   fill: #2f2f37;
 }
 
+.close-button {
+  display: block;
+}
+
+.menu-close-btn {
+  display: block;
+  border: none;
+  background-color: transparent;
+}
+
 .mob-menu {
   width: 100%;
   height: 100%;
@@ -228,6 +238,11 @@ button {
   letter-spacing: -0.02em;
   color: #fff;
 }
+
+.mob-menu-list .mob-menu-item:first-child .mob-menu-link {
+  color: #fd9222;
+}
+
 .mob-soc-list {
   display: flex;
   gap: 18px;
@@ -240,8 +255,12 @@ button {
 .mob-soc-icon {
   fill: transparent;
   stroke: #ffffff;
+  transition: stroke 0.3s ease;
 }
 
+.mob-soc-icon:hover {
+  stroke: #fd9222;
+}
 /*---------------- HERO------------------- */
 
 .hero {
