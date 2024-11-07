@@ -1168,7 +1168,8 @@ button {
   .hero-buttons {
     margin-bottom: 0px;
   }
-  .burger-icon {
+  .burger-icon,
+  .close-button {
     display: none;
   }
   .header-soc-icon {
