@@ -44,7 +44,7 @@
     <path fill="#fd9222" style="fill: var(--color1, #fd9222)" d="M15.374 13.835c-0.837-1.010-1.345-2.319-1.345-3.747 0-0.001 0-0.002 0-0.004v0c0-4.942 5.921-9.877 11.842-9.877 3.27 0.001 5.921 2.652 5.921 5.922v0c0 5.922-4.934 11.845-9.881 11.845-0.001 0-0.002 0-0.003 0-1.428 0-2.737-0.508-3.756-1.353l0.010 0.008-14.581 14.584c-0.352 0.328-0.826 0.53-1.347 0.53-1.092 0-1.977-0.885-1.977-1.977 0-0.521 0.201-0.995 0.531-1.348l-0.001 0.001 14.587-14.584z"></path>
     </symbol>
     <symbol id="icon-close2" viewBox="0 0 32 32">
-<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.5714" d="M29.333 2.667l-26.667 26.667M2.666 2.667l26.667 26.667"></path>
-</symbol>
+    <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.5714" d="M29.333 2.667l-26.667 26.667M2.666 2.667l26.667 26.667"></path>
+    </symbol>
   </defs>
 </svg>
