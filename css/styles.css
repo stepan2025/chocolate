@@ -123,7 +123,6 @@ button {
   letter-spacing: -0.03em;
   color: #111;
   margin-right: 100px;
-
   display: flex;
   align-items: center;
 }
@@ -142,26 +141,14 @@ button {
   transition: color 300ms ease;
 }
 
-.header-menu-item:first-child .header-menu-link::after {
-  content: "";
-  width: 100%;
-  display: block;
-  height: 4px;
-  background-color: #fd9222;
-  border-radius: 3px;
-  position: absolute;
-  left: 0;
-  bottom: -30px;
-}
-
 .header-menu-link:hover,
 .header-menu-link:focus {
   color: #fd9222;
 }
 
 .header-soc-list {
-  margin-left: auto;
-  gap: 24px;
+  /* margin-left: auto;
+  gap: 24px; */
   display: none;
 }
 
@@ -192,13 +179,6 @@ button {
   display: none;
 }
 
-.menu-open-btn {
-  display: block;
-  margin-left: auto;
-  border: none;
-  background-color: transparent;
-}
-
 .burger-icon {
   display: block;
   fill: #2f2f37;
@@ -224,6 +204,13 @@ button {
   display: block;
   margin-left: auto;
   margin-bottom: 88px;
+}
+
+.menu-open-btn {
+  display: block;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
 }
 
 .mob-menu-list {
@@ -367,7 +354,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .scroll-down:hover,
@@ -468,6 +455,14 @@ button {
   gap: 20px;
 }
 
+.taste-item:first-child {
+  background-color: #fd9222;
+}
+
+.taste-item:last-child {
+  background-color: black;
+}
+
 .taste-item {
   border: 1px solid #fd9222;
   border-radius: 15px;
@@ -496,7 +491,24 @@ button {
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #111;
+  color: black;
+}
+
+/* Первый элемент белого цвета */
+.taste-item:nth-child(1) .taste-subtitle {
+  color: white;
+}
+
+/* Четвертый элемент белого цвета */
+.taste-item:nth-child(4) .taste-subtitle {
+  color: white;
+}
+
+.taste-item:nth-child(3) {
+  order: 4; /* Третий элемент перемещается на четвертое место */
+}
+.taste-item:nth-child(4) {
+  order: 3; /* Четвертый элемент перемещается на третье место */
 }
 
 .taste-cover-text {
@@ -664,6 +676,7 @@ button {
   font-size: 14px;
   display: block;
   margin: 0 auto;
+  background-color: #fafafa;
 }
 
 .reviews-btn:hover {
@@ -741,6 +754,11 @@ button {
   line-height: 1.14;
   letter-spacing: -0.02em;
   color: #fff;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-menu-link:hover {
+  color: #fd9222;
 }
 
 .footer-bottom {
@@ -751,6 +769,10 @@ button {
 
 .footer-form {
   display: flex;
+}
+
+.taste-item:nth-child(4) {
+  border: none; /* Третий элемент перемещается на четвертое место */
 }
 
 .footer-input {
@@ -778,14 +800,12 @@ button {
   align-items: center;
   justify-content: center;
   gap: 5px;
+  transition: background-color 300ms ease, color 300ms ease;
 }
 
 .footer-btn:hover {
-  color: #4c4c4c;
-}
-
-.footer-btn:hover svg {
-  stroke: #4c4c4c;
+  color: #fd9222;
+  background-color: #fafafa;
 }
 
 .backdrop {
@@ -971,8 +991,25 @@ button {
     padding-right: 32px;
   }
 
+  /* .container {
+    max-width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  } */
+
+  .taste-item:nth-child(4) {
+    order: 4; /* Третий элемент перемещается на четвертое место */
+  }
+  .taste-item:nth-child(3) {
+    order: 3; /* Четвертый элемент перемещается на третье место */
+  }
+
   .made > .container {
     max-width: 678px;
+  }
+
+  .menu-open-btn {
+    display: none;
   }
 
   .section-title {
@@ -988,7 +1025,8 @@ button {
   .hero {
     max-width: 768px;
     padding-top: 671px;
-    padding-bottom: 46px;
+    margin: 0 auto 34px;
+    padding-bottom: 40px;
     background-image: linear-gradient(
         rgba(30, 24, 35, 0.4),
         rgba(30, 24, 35, 0.4)
@@ -1013,10 +1051,18 @@ button {
     padding-right: 72px;
   }
 
+  .container-header {
+    display: flex;
+    align-items: baseline;
+    margin-left: auto;
+  }
+
+  .scroll-container {
+    margin-left: auto;
+  }
+
   .hero-title {
     font-size: 28px;
-  }
-  .hero-title {
     max-width: 484px;
   }
 
@@ -1024,7 +1070,6 @@ button {
   .hero-anchor-link {
     padding: 14px 40px;
   }
-
   .hero-scroll-link {
     margin-left: auto;
     margin-top: 0;
@@ -1032,7 +1077,7 @@ button {
 
   .features {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 86px;
   }
 
   .features-list {
@@ -1080,6 +1125,7 @@ button {
 
   .made-subtitle {
     margin-bottom: 28px;
+    max-width: 350px;
   }
 
   .reviews {
@@ -1094,13 +1140,14 @@ button {
   .reviews-list {
     gap: 60px 16px;
     justify-content: center;
+    margin-bottom: 95px;
   }
 
   .reviews-item {
     width: calc((100% - 16px) / 2);
   }
   .hero-buttons {
-    margin-bottom: 32px;
+    margin-bottom: 0px;
   }
   .burger-icon {
     display: none;
@@ -1115,7 +1162,39 @@ button {
   .header-soc-list {
     display: flex;
     margin-left: auto;
-    gap: 18px;
+  }
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    padding-bottom: 50px;
+  }
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .footer-menu-item:nth-child(4) {
+    display: none; /* Третий элемент перемещается на четвертое место */
+  }
+  .footer-menu-item:nth-child(3) {
+    display: none; /* Четвертый элемент перемещается на третье место */
+  }
+  .footer-bottom {
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer-menu-list {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+  .footer-form {
+    gap: 8px;
+  }
+  .footer-btn {
+    padding: 14px 28px;
+    width: 128px;
+    height: 45px;
   }
 }
 
@@ -1125,6 +1204,27 @@ button {
     max-width: 1094px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .header {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .header-logo {
+    font-size: 18px;
+    line-height: 1.11;
+    margin-right: 447px;
+  }
+
+  .header-menu-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .features {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .hero > .container-narrow {
@@ -1141,6 +1241,7 @@ button {
 
   .hero {
     padding-top: 375px;
+    margin: 0 auto 72px;
     max-width: 1200px;
     background-image: linear-gradient(
         rgba(30, 24, 35, 0.4),
@@ -1205,11 +1306,12 @@ button {
 
   .reviews {
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
 
   .reviews-list {
     gap: 28px;
+    margin-bottom: 50px;
   }
 
   .reviews-item {
@@ -1248,5 +1350,22 @@ button {
     padding: 17px 40px;
     width: 137px;
     height: 52px;
+  }
+  .taste-item:nth-child(4) {
+    order: 2; /* Третий элемент перемещается на четвертое место */
+  }
+  .taste-item:nth-child(3) {
+    order: 3; /* Четвертый элемент перемещается на третье место */
+  }
+  .reviews-btn {
+    border: 1px solid #fd9222;
+    border-radius: 100px;
+    padding: 14px 40px;
+    width: 222px;
+    height: 50px;
+    font-family: inherit;
+    font-size: 18px;
+    text-align: center;
+    color: #111;
   }
 }
