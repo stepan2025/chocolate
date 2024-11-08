@@ -78,7 +78,7 @@ button {
   font-weight: 600;
   /* font-size: 24px;
   line-height: 1.17; */
-  font-size: 20px;
+  font-size: 17px;
   line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
@@ -930,14 +930,17 @@ button {
   text-decoration: none; /* Убираем подчеркивание при наведении */
 }
 
+.tt {
+  flex-wrap: nowrap;
+}
 .modal-title {
   text-align: left;
-  max-width: 255px;
-  margin-bottom: 28px;
+  max-width: 237px;
+  margin-bottom: 14px;
 }
 
 .modal-field {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 .input-wrapper {
   position: relative;
@@ -947,7 +950,7 @@ button {
   width: 100%;
   border: 1px solid rgba(17, 17, 17, 0.15);
   border-radius: 13px;
-  height: 50px;
+  height: 38px;
   background-color: transparent;
   padding-left: 62px;
   outline: transparent;
@@ -1007,7 +1010,7 @@ button {
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 14px;
 }
 
 /* .modal-check-text::before {
@@ -1289,6 +1292,15 @@ button {
   .modal-open {
     right: 26px;
     top: 26px;
+  }
+  .modal-field {
+    margin-bottom: 18px;
+  }
+  .modal-check-text {
+    margin-bottom: 25px;
+  }
+  .modal-input {
+    height: 50px;
   }
 }
 
