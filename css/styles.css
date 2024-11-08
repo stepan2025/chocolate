@@ -917,7 +917,6 @@ button {
 .policy-link {
   color: #fd9222; /* Цвет текста */
   text-decoration: underline; /* Нижнее подчеркивание */
-  margin-left: 4px;
 }
 
 .modal-check-icon {
@@ -927,6 +926,15 @@ button {
   flex-shrink: 0;
 }
 
+.policy-accept {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.6);
+}
+
 .policy-link:hover {
   text-decoration: none; /* Убираем подчеркивание при наведении */
 }
@@ -934,7 +942,7 @@ button {
 .modal-title {
   text-align: left;
   max-width: 237px;
-  margin-bottom: 14px;
+  margin-bottom: 32px;
 }
 
 .modal-field {
@@ -1006,9 +1014,8 @@ button {
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.6);
   display: flex;
-  align-items: center;
   position: relative;
-  margin-bottom: 14px;
+  margin-bottom: 32px;
 }
 
 /* .modal-check-text::before {
@@ -1281,7 +1288,7 @@ button {
   }
   .modal {
     width: 517px;
-    height: 661px;
+    height: 682px;
   }
   .modal-title {
     max-width: 298px;
@@ -1299,6 +1306,12 @@ button {
   }
   .modal-input {
     height: 50px;
+  }
+  .policy-accept {
+    font-size: 14px;
+  }
+  .modal-label {
+    margin-bottom: 14px;
   }
 }
 
