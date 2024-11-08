@@ -71,6 +71,8 @@
         </button>
       </div>
 
+      <!-- mob-menu -->
+
       <div class="mob-menu" data-menu>
         <div>
           <button type="button" class="menu-close-btn" data-menu-close>
@@ -117,7 +119,9 @@
         </ul>
       </div>
     </header>
+
     <!-- header>(nav>(a>img)+ul>li*3>a)ul>li*2>a{Insta} -->
+
     <main>
       <section class="hero">
         <div class="container-narrow">
@@ -132,7 +136,6 @@
               </button>
               <a href="#made" class="hero-anchor-link">How it’s made</a>
             </div>
-
             <div class="scroll-container">
               <a href="#down" class="">
                 <p class="hero-scroll-link">scroll down</p>
@@ -146,6 +149,7 @@
           </div>
         </div>
       </section>
+
       <section class="features">
         <div class="container-narrow">
           <h2 class="visually-hidden">Avantages</h2>
@@ -295,6 +299,7 @@
           </ul>
         </div>
       </section>
+
       <section id="made" class="made">
         <div class="container">
           <h2 class="made-title section-title">hOW IT’S <span>made?</span></h2>
@@ -364,7 +369,9 @@
           </div>
         </div>
       </section>
+
       <!-- section>h2+(ul>li*3>img+h3+p)+button:button -->
+
       <section class="reviews">
         <div class="container">
           <h2 class="reviews-title section-title">
@@ -465,6 +472,7 @@
               </li>
             </ul>
           </nav>
+
           <form class="footer-form">
             <label for="footer-email"></label>
             <input
@@ -482,7 +490,11 @@
 
     <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="modal-open" data-modal-close>X</button>
+        <button type="button" class="modal-open" data-modal-close>
+          <svg class="btn-close" width="28" height="28">
+            <use href="./images/icons.svg#icon-x-close-1"></use>
+          </svg>
+        </button>
         <p class="modal-title section-title">
           LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span>
         </p>
@@ -502,28 +514,41 @@
               </svg>
             </div>
           </div>
-          <div class="modal-field">
-            <label for="user-email" class="modal-label">Phone number</label>
-            <input
-              type="email"
-              name="user-email"
-              id="user-email"
-              class="modal-input"
-              placeholder="test@mail.com"
-            />
-          </div>
 
           <div class="modal-field">
             <label for="user-tel" class="modal-label">Email</label>
-            <input
-              type="tel"
-              name="user-tel"
-              id="user-tel"
-              class="modal-input"
-              required
-              value="+380"
-            />
+            <div class="input-wrapper">
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                class="modal-input"
+                required
+                placeholder="example@mail.com"
+              />
+              <svg width="24" height="24" class="modal-icon">
+                <use href="./images/icons.svg#icon-mail-2"></use>
+              </svg>
+            </div>
           </div>
+
+          <div class="modal-field">
+            <label for="user-email" class="modal-label">Phone number</label>
+            <div class="input-wrapper">
+              <input
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                class="modal-input"
+                required
+                placeholder="+380"
+              />
+              <svg width="24" height="24" class="modal-icon">
+                <use href="./images/icons.svg#icon-phone-2"></use>
+              </svg>
+            </div>
+          </div>
+
           <div class="modal-field">
             <label for="user-comment" class="modal-label">Comment</label>
             <textarea
@@ -531,6 +556,7 @@
               id="user-comment"
               class="modal-textarea"
               placeholder="Enter text"
+              required
             ></textarea>
           </div>
 
@@ -543,13 +569,14 @@
               value="true"
             />
             <label for="policy" class="modal-check-text">
-              <span>
+              <span class="modal-check-icon">
                 <svg class="modal-check-icon" width="10" height="10">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the Privacy Policy</label
-            >
+              I accept the terms and conditions of the
+              <a href="#" class="policy-link">Privacy Policy</a>
+            </label>
           </div>
 
           <div class="modal-field">
@@ -597,7 +624,7 @@
             </fieldset> -->
           </div>
 
-          <button type="submit">Send</button>
+          <button type="submit" class="btn-form">Send</button>
         </form>
       </div>
     </div>

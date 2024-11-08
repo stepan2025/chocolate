@@ -208,6 +208,7 @@ button {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  z-index: 999;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -847,6 +848,8 @@ button {
   /* display: flex;
   align-items: center;
   justify-content: center; */
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open {
@@ -856,33 +859,81 @@ button {
 }
 
 .modal {
-  width: 517px;
-  min-height: 700px;
+  width: 311px;
+  height: 599px;
+  /* min-height: 700px; */
   background-color: #fafafa;
   border-radius: 15px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 40px;
+  padding: 32px 24px;
   /* max-height: 90vh;
   overflow: auto; */
 }
 
 .modal-open {
   position: absolute;
-  width: 28px;
-  height: 28px;
-  right: 26px;
-  top: 26px;
+  right: 14px;
+  top: 14px;
   background-color: transparent;
   border: none;
+  stroke: #000;
+}
+
+.btn-close {
+}
+
+.btn-form {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 117px;
+  height: 45px;
+  background-color: #fd9222;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 300ms ease, color 300ms ease,
+    border-color 0.3s ease;
+}
+
+.btn-form:hover {
+  color: #fd9222;
+  background-color: #fafafa;
+  border: 1px solid #fd9222;
+}
+
+/* .privacy-policys {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fd9222;
+} */
+
+.policy-link {
+  color: #fd9222; /* Цвет текста */
+  text-decoration: underline; /* Нижнее подчеркивание */
+  margin-left: 4px;
+}
+
+.modal-check-icon {
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 150ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.policy-link:hover {
+  text-decoration: none; /* Убираем подчеркивание при наведении */
 }
 
 .modal-title {
   text-align: left;
-  max-width: 298px;
-  margin-bottom: 40px;
+  max-width: 255px;
+  margin-bottom: 28px;
 }
 
 .modal-field {
@@ -896,10 +947,9 @@ button {
   width: 100%;
   border: 1px solid rgba(17, 17, 17, 0.15);
   border-radius: 13px;
-  height: 68px;
+  height: 50px;
   background-color: transparent;
   padding-left: 62px;
-  color: teal;
   outline: transparent;
   transition: border-color 300ms ease;
 }
@@ -936,7 +986,7 @@ button {
 
 .modal-textarea {
   width: 100%;
-  height: 137px;
+  height: 101px;
   resize: none;
   background-color: transparent;
   border: 1px solid rgba(17, 17, 17, 0.15);
@@ -957,6 +1007,7 @@ button {
   display: flex;
   align-items: center;
   position: relative;
+  margin-bottom: 25px;
 }
 
 /* .modal-check-text::before {
@@ -1226,6 +1277,18 @@ button {
     padding: 14px 28px;
     width: 128px;
     height: 45px;
+  }
+  .modal {
+    width: 517px;
+    height: 661px;
+  }
+  .modal-title {
+    max-width: 298px;
+    margin-bottom: 25px;
+  }
+  .modal-open {
+    right: 26px;
+    top: 26px;
   }
 }
 
