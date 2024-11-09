@@ -806,9 +806,6 @@ button {
   stroke: #000;
 }
 
-.btn-close {
-}
-
 .btn-form {
   font-weight: 600;
   font-size: 14px;
@@ -837,6 +834,10 @@ button {
   text-decoration: underline;
 }
 
+.policy-link:hover {
+  text-decoration: none;
+}
+
 .modal-check-icon {
   transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1),
     border 150ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -853,10 +854,6 @@ button {
   color: rgba(64, 64, 64, 0.6);
 }
 
-.policy-link:hover {
-  text-decoration: none;
-}
-
 .modal-title {
   text-align: left;
   max-width: 237px;
@@ -866,8 +863,19 @@ button {
 .modal-field {
   margin-bottom: 14px;
 }
+
 .input-wrapper {
   position: relative;
+}
+
+.modal-icon {
+  fill: transparent;
+  stroke: #111111;
+  position: absolute;
+  left: 24px;
+  bottom: 50%;
+  transform: translateY(50%);
+  transition: stroke var(--cubic);
 }
 
 .modal-input {
@@ -879,16 +887,6 @@ button {
   padding-left: 62px;
   outline: transparent;
   transition: border-color 300ms ease;
-}
-
-.modal-icon {
-  fill: transparent;
-  stroke: #111111;
-  position: absolute;
-  left: 24px;
-  bottom: 50%;
-  transform: translateY(50%);
-  transition: stroke var(--cubic);
 }
 
 .modal-input:focus {
