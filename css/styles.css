@@ -550,9 +550,6 @@ button {
   margin-bottom: 20px;
 }
 
-.made-list {
-}
-
 .made-item {
   margin-bottom: 18px;
   position: relative;
@@ -1349,15 +1346,10 @@ button {
   }
 
   .reviews-btn {
-    border: 1px solid #fd9222;
-    border-radius: 100px;
     padding: 14px 40px;
     width: 222px;
     height: 50px;
-    font-family: inherit;
     font-size: 18px;
-    text-align: center;
-    color: #111;
   }
 
   .taste-item {
