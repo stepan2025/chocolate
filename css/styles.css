@@ -64,7 +64,6 @@ button {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -181,6 +180,8 @@ button {
   display: block;
   border: none;
   background-color: transparent;
+  margin-left: auto;
+  margin-bottom: 88px;
 }
 
 .mob-menu {
@@ -199,12 +200,6 @@ button {
   z-index: 999;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-close-btn {
-  display: block;
-  margin-left: auto;
-  margin-bottom: 88px;
 }
 
 .menu-open-btn {
@@ -1217,7 +1212,6 @@ button {
   }
 
   .header {
-    padding-top: 28px;
     padding-bottom: 28px;
   }
 
@@ -1225,11 +1219,6 @@ button {
     font-size: 18px;
     line-height: 1.11;
     margin-right: 447px;
-  }
-
-  .header-menu-list {
-    display: flex;
-    gap: 24px;
   }
 
   .features {
