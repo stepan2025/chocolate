@@ -1050,6 +1050,7 @@ button {
   .hero-anchor-link {
     padding: 14px 40px;
   }
+
   .hero-scroll-link {
     margin-left: auto;
     margin-top: 0;
@@ -1122,24 +1123,30 @@ button {
   .reviews-item {
     width: calc((100% - 16px) / 2);
   }
+
   .hero-buttons {
     margin-bottom: 0px;
   }
+
   .burger-icon,
   .close-button {
     display: none;
   }
+
   .header-soc-icon {
     display: flex;
   }
+
   .header-menu-list {
     display: flex;
     gap: 24px;
   }
+
   .header-soc-list {
     display: flex;
     margin-left: auto;
   }
+
   .footer-top {
     display: flex;
     justify-content: space-between;
@@ -1147,55 +1154,67 @@ button {
     margin-bottom: 24px;
     padding-bottom: 50px;
   }
+
   .footer {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
+  .footer-menu-item:nth-child(3),
   .footer-menu-item:nth-child(4) {
     display: none;
   }
-  .footer-menu-item:nth-child(3) {
-    display: none;
-  }
+
   .footer-bottom {
     flex-direction: row;
     align-items: center;
   }
+
   .footer-menu-list {
     flex-direction: row;
     margin-bottom: 0;
   }
+
   .footer-form {
     gap: 8px;
   }
+
   .footer-btn {
     padding: 14px 28px;
     width: 128px;
   }
+
   .modal {
     width: 517px;
     height: 682px;
   }
+
   .modal-title {
     max-width: 298px;
     margin-bottom: 25px;
   }
+
   .modal-open {
     right: 26px;
     top: 26px;
   }
+
   .modal-field {
     margin-bottom: 18px;
   }
+
   .modal-check-text {
     margin-bottom: 25px;
   }
+
   .modal-input {
     height: 50px;
   }
+
   .policy-accept {
     font-size: 14px;
   }
+
   .modal-label {
     margin-bottom: 14px;
   }
@@ -1304,27 +1323,34 @@ button {
   .reviews-item {
     width: calc((100% - 56px) / 3);
   }
+
   .hero-title {
     max-width: 484px;
   }
+
   .footer-title {
     font-size: 28px;
     line-height: 1.21;
   }
+
   .footer-top {
     align-items: center;
   }
+
   .footer-menu-list {
     display: flex;
     gap: 24px;
   }
+
   .footer-bottom {
     display: flex;
   }
+
   .footer-input {
     width: 313px;
     height: 52px;
   }
+
   .footer-btn {
     padding: 17px 40px;
     width: 137px;
@@ -1341,12 +1367,15 @@ button {
   .taste-item {
     width: calc((100% - 3 * 19px) / 4);
   }
+
   .taste-item:nth-child(4) {
     order: 6;
   }
+
   .taste-item:nth-child(3) {
     order: 5;
   }
+
   .taste-item:nth-child(2) {
     order: 4;
   }
