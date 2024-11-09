@@ -435,13 +435,8 @@ button {
   gap: 20px;
 }
 
-.taste-item:first-child {
-  background-color: #fd9222;
-}
-
-.taste-item:nth-child(3) {
-  background-color: black;
-  border: none;
+.taste-item-image {
+  margin: 0 auto 36px;
 }
 
 .taste-item {
@@ -451,26 +446,13 @@ button {
   width: 100%;
 }
 
-.taste-item:hover .taste-cover-text {
-  transform: translateY(0);
+.taste-item:first-child {
+  background-color: #fd9222;
 }
 
-.taste-cover-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
-.taste-item-image {
-  margin: 0 auto 36px;
-}
-
-.taste-subtitle {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: black;
+.taste-item:nth-child(3) {
+  background-color: black;
+  border: none;
 }
 
 .taste-item:nth-child(1) .taste-subtitle {
@@ -511,6 +493,24 @@ button {
 .taste-item:nth-child(3) .taste-cover-text {
   background-color: black;
   color: #fafafa;
+}
+
+.taste-item:hover .taste-cover-text {
+  transform: translateY(0);
+}
+
+.taste-cover-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.taste-subtitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: black;
 }
 
 /* made */
@@ -971,14 +971,20 @@ button {
     padding-right: 32px;
   }
 
+  .taste-item {
+    width: calc((100% - 32px) / 2);
+  }
+
   .taste-item:nth-child(4) {
     order: 6;
   }
+
   .taste-item:nth-child(3) {
-    order: 7;
+    order: 8;
   }
+
   .taste-item:nth-child(2) {
-    order: 4;
+    order: 7;
   }
 
   .made > .container {
@@ -1081,10 +1087,6 @@ button {
 
   .taste-list {
     gap: 32px;
-  }
-
-  .taste-item {
-    width: calc((100% - 32px) / 2);
   }
 
   .made {
@@ -1285,10 +1287,6 @@ button {
     gap: 19px;
   }
 
-  .taste-item {
-    width: calc((100% - 3 * 19px) / 4);
-  }
-
   .made {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -1360,6 +1358,10 @@ button {
     font-size: 18px;
     text-align: center;
     color: #111;
+  }
+
+  .taste-item {
+    width: calc((100% - 3 * 19px) / 4);
   }
   .taste-item:nth-child(4) {
     order: 6;
