@@ -764,6 +764,8 @@ button {
   background-color: #fafafa;
 }
 
+/* modal */
+
 .backdrop {
   width: 100%;
   height: 100%;
@@ -1171,7 +1173,6 @@ button {
   .footer-btn {
     padding: 14px 28px;
     width: 128px;
-    height: 45px;
   }
   .modal {
     width: 517px;
@@ -1229,11 +1230,6 @@ button {
     max-width: 1094px;
     padding-left: 40px;
     padding-right: 40px;
-  }
-
-  .footer {
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
 
   .hero {
@@ -1314,16 +1310,10 @@ button {
     max-width: 484px;
   }
   .footer-title {
-    font-weight: 500;
     font-size: 28px;
     line-height: 1.21;
-    letter-spacing: -0.02em;
-    color: #ffffff;
-    max-width: 300px;
   }
   .footer-top {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
   }
   .footer-menu-list {
@@ -1332,8 +1322,6 @@ button {
   }
   .footer-bottom {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
   .footer-input {
     width: 313px;
