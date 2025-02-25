@@ -70,6 +70,26 @@ button {
   overflow: hidden;
 }
 
+.success-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #3d3c2e;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.success-message.fade-out {
+  opacity: 0;
+}
+
 .section-title {
   font-weight: 600;
   font-size: 18px;
